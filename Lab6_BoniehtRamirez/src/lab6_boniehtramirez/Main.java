@@ -75,6 +75,7 @@ public class Main extends javax.swing.JFrame {
         tf_nombreM = new javax.swing.JTextField();
         jButton6 = new javax.swing.JButton();
         tf_contraseñaM = new javax.swing.JTextField();
+        jButton14 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jt_proyectos = new javax.swing.JTable();
@@ -360,6 +361,15 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        jButton14.setBackground(new java.awt.Color(204, 0, 0));
+        jButton14.setForeground(new java.awt.Color(0, 0, 0));
+        jButton14.setText("Cerrar Sesión");
+        jButton14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton14MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -395,6 +405,10 @@ public class Main extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(tf_nombreM, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(319, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton14)
+                .addGap(80, 80, 80))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -425,7 +439,9 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(tf_facultadM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton6)
-                .addContainerGap(120, Short.MAX_VALUE))
+                .addGap(42, 42, 42)
+                .addComponent(jButton14)
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Info Personal", jPanel3);
@@ -1153,6 +1169,10 @@ public class Main extends javax.swing.JFrame {
         jd_clases.setVisible(true);
     }//GEN-LAST:event_jButton11MouseClicked
 
+    private void jButton14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton14MouseClicked
+        jDialog1.setVisible(false);
+    }//GEN-LAST:event_jButton14MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1196,6 +1216,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
